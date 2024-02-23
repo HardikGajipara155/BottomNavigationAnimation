@@ -22,10 +22,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
-import com.example.bottom_navigation_module.utils.lerp
-import com.example.bottom_navigation_module.utils.noRippleClickable
-import com.example.bottom_navigation_module.utils.toDp
-import com.example.bottom_navigation_module.utils.toPxf
+//import com.example.bottom_navigation_module.utils.lerp
+//import com.example.bottom_navigation_module.utils.noRippleClickable
+//import com.example.bottom_navigation_module.utils.toDp
+//import com.example.bottom_navigation_module.utils.toPxf
 
 data class ButtonBackground(
     @DrawableRes val icon: Int,
@@ -62,7 +62,7 @@ fun ColorButton(
 ) {
 
     Box(
-        modifier = modifier.noRippleClickable { onClick() }
+//        modifier = modifier.noRippleClickable { onClick() }
     ) {
         val isSelected = remember(selectedIndex, index) { selectedIndex == index }
 
@@ -73,25 +73,25 @@ fun ColorButton(
         )
 
         val density = LocalDensity.current
-        val maxOffset = remember(maxBackgroundOffset) { maxBackgroundOffset.toPxf(density) }
+//        val maxOffset = remember(maxBackgroundOffset) { maxBackgroundOffset.toPxf(density) }
 
         val isFromLeft = remember(prevSelectedIndex, index, selectedIndex) {
             (prevSelectedIndex < index) || (selectedIndex > index)
         }
-        val offset by remember(isSelected, isFromLeft) {
-            derivedStateOf {
-                calculateBackgroundOffset(
-                    isSelected = isSelected,
-                    isFromLeft = isFromLeft,
-                    maxOffset = maxOffset,
-                    fraction = fraction.value
-                )
-            }
-        }
+//        val offset by remember(isSelected, isFromLeft) {
+//            derivedStateOf {
+//                calculateBackgroundOffset(
+//                    isSelected = isSelected,
+//                    isFromLeft = isFromLeft,
+////                    maxOffset = maxOffset,
+//                    fraction = fraction.value
+//                )
+//            }
+//        }
 
         Image(
             modifier = Modifier
-                .offset(x = background.offset.x + offset.toDp(), y = background.offset.y)
+//                .offset(x = background.offset.x + offset.toDp(), y = background.offset.y)
                 .scale(fraction.value)
                 .align(Alignment.Center),
             painter = painterResource(id = background.icon),
@@ -113,10 +113,11 @@ private fun calculateBackgroundOffset(
     fraction: Float,
     maxOffset: Float
 ): Float {
-    val offset = if (isFromLeft) -maxOffset else maxOffset
-    return if (isSelected) {
-        lerp(offset, 0f, fraction)
-    } else {
-        lerp(-offset, 0f, fraction)
-    }
+//    val offset = if (isFromLeft) -maxOffset else maxOffset
+//    return if (isSelected) {
+////        lerp(offset, 0f, fraction)
+//    } else {
+////        lerp(-offset, 0f, fraction)
+//    }
+    return 0f
 }

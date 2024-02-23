@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.res.painterResource
-import com.example.bottom_navigation_module.utils.rotationWithTopCenterAnchor
+//import com.example.bottom_navigation_module.utils.rotationWithTopCenterAnchor
 
 import kotlin.math.PI
 import kotlin.math.sin
@@ -39,18 +39,18 @@ class BellColorButton(
 //            label = "colorAnimation"
         )
 
-        Icon(
-            modifier = modifier
-                .rotationWithTopCenterAnchor(
-                    if (isSelected) degreesRotationInterpolation(
-                        maxDegrees,
-                        rotationFraction.value
-                    ) else 0f
-                ),
-            painter = painterResource(id = icon),
-            contentDescription = null,
-            tint = color.value
-        )
+//        Icon(
+//            modifier = modifier
+//                .rotationWithTopCenterAnchor(
+//                    if (isSelected) degreesRotationInterpolation(
+//                        maxDegrees,
+//                        rotationFraction.value
+//                    ) else 0f
+//                ),
+//            painter = painterResource(id = icon),
+//            contentDescription = null,
+//            tint = color.value
+//        )
     }
 
     private fun degreesRotationInterpolation(maxDegrees: Float, fraction: Float) =

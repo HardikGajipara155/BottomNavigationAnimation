@@ -22,7 +22,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import com.example.bottomnavigationanim.ui.theme.LightGrey
-import com.example.bottom_navigation_module.utils.toPxf
+//import com.example.bottom_navigation_module.utils.toPxf
 
 
 data class CalendarAnimation(
@@ -108,19 +108,19 @@ fun CalendarPoint(
     val density = LocalDensity.current
     val internalOffset = remember {
         if (layoutDirection == LayoutDirection.Ltr) {
-            Offset(3.5.dp.toPxf(density), 5.dp.toPxf(density))
+//            Offset(3.5.dp.toPxf(density), 5.dp.toPxf(density))
         } else {
-            Offset((-3.5).dp.toPxf(density), 5.dp.toPxf(density))
+//            Offset((-3.5).dp.toPxf(density), 5.dp.toPxf(density))
         }
     }
-    Box(
-        modifier = modifier
-            .graphicsLayer(
-                translationX = internalOffset.x + offsetX,
-                translationY = internalOffset.y
-            )
-            .size(3.dp)
-            .clip(CircleShape)
-            .background(iconColor)
-    )
+//    Box(
+//        modifier = modifier
+//            .graphicsLayer(
+//                translationX = internalOffset.x + offsetX,
+//                translationY = internalOffset.y
+//            )
+//            .size(3.dp)
+//            .clip(CircleShape)
+//            .background(iconColor)
+//    )
 }
