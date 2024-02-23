@@ -16,4 +16,4 @@
 	}
 2.
 
-      implementation 'com.github.HardikGajipara155:BottomNavigationAnims:1.1.0'
+      implementation 'com.github.HardikGajipara155:BottomNavigationAnimation:1.0.0'
