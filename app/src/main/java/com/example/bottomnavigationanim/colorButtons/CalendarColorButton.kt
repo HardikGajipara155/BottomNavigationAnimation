@@ -22,7 +22,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import com.example.bottomnavigationanim.ui.theme.LightGrey
-import com.example.bottomnavigationanim.anim.utils.toPxf
+import com.example.bottom_navigation_module.utils.toPxf
 
 
 data class CalendarAnimation(

@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.res.painterResource
-import com.example.bottomnavigationanim.anim.utils.rotationWithTopCenterAnchor
+import com.example.bottom_navigation_module.utils.rotationWithTopCenterAnchor
 
 import kotlin.math.PI
 import kotlin.math.sin

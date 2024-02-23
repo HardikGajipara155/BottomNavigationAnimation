@@ -7,31 +7,30 @@ import androidx.activity.compose.setContent
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
-import com.example.bottomnavigationanim.anim.AnimatedNavigationBar
-import com.example.bottomnavigationanim.anim.animation.balltrajectory.Parabolic
-import com.example.bottomnavigationanim.anim.animation.balltrajectory.Straight
-import com.example.bottomnavigationanim.anim.animation.balltrajectory.Teleport
-import com.example.bottomnavigationanim.anim.animation.indendshape.Height
-import com.example.bottomnavigationanim.anim.animation.indendshape.StraightIndent
-import com.example.bottomnavigationanim.anim.animation.indendshape.shapeCornerRadius
-import com.example.bottomnavigationanim.anim.items.dropletbutton.DropletButton
-import com.example.bottomnavigationanim.anim.items.wigglebutton.WiggleButton
+import com.example.bottom_navigation_module.AnimatedNavigationBar
+import com.example.bottom_navigation_module.animation.balltrajectory.Parabolic
+import com.example.bottom_navigation_module.animation.balltrajectory.Straight
+import com.example.bottom_navigation_module.animation.balltrajectory.Teleport
+import com.example.bottom_navigation_module.animation.indendshape.Height
+import com.example.bottom_navigation_module.animation.indendshape.StraightIndent
+import com.example.bottom_navigation_module.animation.indendshape.shapeCornerRadius
+import com.example.bottom_navigation_module.items.dropletbutton.DropletButton
+import com.example.bottom_navigation_module.items.wigglebutton.WiggleButton
 import com.example.bottomnavigationanim.colorButtons.ColorButton
 import com.example.bottomnavigationanim.contents.colorButtons
 import com.example.bottomnavigationanim.contents.dropletButtons
 import com.example.bottomnavigationanim.contents.wiggleButtonItems
-import com.example.bottomnavigationanim.ui.theme.*
+import com.example.bottomnavigationanim.ui.theme.ElectricViolet
+import com.example.bottomnavigationanim.ui.theme.LightPurple
+import com.example.bottomnavigationanim.ui.theme.Purple
+import com.example.bottomnavigationanim.ui.theme.RoyalPurple
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
